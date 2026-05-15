@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_primary">#534AB7</color>
+    <color name="purple_light">#EEEDFE</color>
+    <color name="purple_dark">#3C3489</color>
+    <color name="teal_accent">#1D9E75</color>
+    <color name="teal_light">#E1F5EE</color>
+    <color name="amber">#BA7517</color>
+    <color name="amber_light">#FAEEDA</color>
+    <color name="red_price">#A32D2D</color>
+    <color name="surface">#F8F7FE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#6B6B8A</color>
+    <color name="border">#E0DFF5</color>
+</resources>

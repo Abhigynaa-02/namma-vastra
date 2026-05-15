@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:id="@+id/layoutForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create Your Profile"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="16dp"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Weaver Name"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/etVillage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Village Name"
+                android:layout_marginBottom="12dp"/>
+
+            <EditText
+                android:id="@+id/etYearsExp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Years of Experience"
+                android:inputType="number"
+                android:layout_marginBottom="12dp"/>
+
+            <Spinner
+                android:id="@+id/spSpeciality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:minHeight="48dp"/>
+
+            <EditText
+                android:id="@+id/etStory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="My Craft Story"
+                android:lines="5"
+                android:gravity="top|start"
+                android:inputType="textMultiLine"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/btnSaveProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save My Profile"
+                android:layout_marginBottom="24dp"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView
+                    android:id="@+id/tvProfileName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"/>
+                <TextView
+                    android:id="@+id/tvProfileVillage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/text_secondary"/>
+                <TextView
+                    android:id="@+id/tvProfileBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:background="@color/purple_light"
+                    android:textColor="@color/purple_dark"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tvProfileStory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textStyle="italic"
+                    android:textColor="@color/text_primary"/>
+                <Button
+                    android:id="@+id/btnEditProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Edit"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Ilkal Craft"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/amber_light"
+            app:cardCornerRadius="12dp"
+            android:layout_marginBottom="24dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="• Handwoven with distinctive red maroon borders" android:textColor="@color/text_primary" android:layout_marginBottom="4dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="• Tope Teni seragu (pallu) is the hallmark" android:textColor="@color/text_primary" android:layout_marginBottom="4dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="• GI Tag awarded in 2006 for unique technique" android:textColor="@color/text_primary"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Molakalmuru Craft"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/teal_light"
+            app:cardCornerRadius="12dp"
+            android:layout_marginBottom="24dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="• Known for pure silk and rich zari work" android:textColor="@color/text_primary" android:layout_marginBottom="4dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="• Traditional motifs include nature and temples" android:textColor="@color/text_primary" android:layout_marginBottom="4dp"/>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="• Received GI Tag in 2011 for authenticity" android:textColor="@color/text_primary"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

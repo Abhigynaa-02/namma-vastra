@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Namma Vastra | ನಮ್ಮ ವಸ್ತ್ರ</string>
+    <string name="trend_board">Trends | ಟ್ರೆಂಡ್ಸ್</string>
+    <string name="gallery">Gallery | ಗ್ಯಾಲರಿ</string>
+    <string name="calculator">Calculator | ಲೆಕ್ಕ</string>
+    <string name="my_story">My Story | ನನ್ನ ಕಥೆ</string>
+</resources>
